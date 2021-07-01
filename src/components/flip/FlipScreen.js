@@ -1,9 +1,13 @@
 import React from 'react'
+import { Navbar } from '../ui/Navbar'
 
 export const FlipScreen = () => {
     return (
-      
-         <h1>FlipScreen</h1>
+
+      <div>
+
+          <Navbar/>
+      </div>
      
     )
 }

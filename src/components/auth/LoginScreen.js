@@ -1,23 +1,52 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import {useDispatch} from 'react-redux';
+import { useForm } from '../../hooks/useForm'
+import { starLogin } from '../../actions/auth';
 
 export const LoginScreen = () => {
+
+const [formLoginValues, handleLoginInputChange]= useForm({
+    lEmail: 'gavia@hotmail.com',
+    lPassword: '123456'
+})
+
+
+const dispatch = useDispatch()
+
+
+
+
+const {lEmail,lPassword}= formLoginValues;
+
+const handleLogin= (e)=>{
+    e.preventDefault()
+   // console.log(formLoginValues)
+    dispatch (starLogin(lEmail,lPassword))
+}
+
     return (
         <>
             <h3 className="auth__title">Login</h3>
-                <form>
+                <form onSubmit={handleLogin}>
                     <input
                         type="text"
                         placeholder="email"
-                        name="email"
+
                         className ='auth__input'
                         autoComplete="off"
+                        name= 'lEmail'
+                        value={lEmail}
+                        onChange={handleLoginInputChange}
+
                     />
                     <input
                         type="password"
                         placeholder="password"
-                        name="password"
                         className ='auth__input'
+                        name= 'lPassword'
+                        value={lPassword}
+                        onChange={handleLoginInputChange}
                     />
 
                     <button 
