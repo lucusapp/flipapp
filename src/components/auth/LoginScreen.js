@@ -6,14 +6,19 @@ import { starLogin } from '../../actions/auth';
 
 export const LoginScreen = () => {
 
+const dispatch = useDispatch()
+
+
+
 const [formLoginValues, handleLoginInputChange]= useForm({
     lEmail: 'gavia@hotmail.com',
     lPassword: '123456'
 })
-
-
-const dispatch = useDispatch()
-
+const [formRegisterValues, handleRegisterInputChange]= useForm({
+    rName:'Josua',
+    rEmail: 'gavia@hotmail.com',
+    rPassword: '123456'
+})
 
 
 
