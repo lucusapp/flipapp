@@ -1,6 +1,6 @@
 
 import Swal from "sweetalert2";
-import { fetchSinTocken } from "../helpers/fetch"
+import { fetchConTocken, fetchSinTocken } from "../helpers/fetch"
 import { types } from "../types/types";
 
 
@@ -49,10 +49,36 @@ export const startRegister= (email,password,name)=>{
         }
 
     }
+}
 
 
+export const startChecking =()=>{
+
+        return async(dispatch)=>{
+            const resp = await fetchConTocken('auth/renew');
+            console.log(resp)
+            const body= await resp.json()
+            console.log(body)
+    
+            if (body.ok){
+                localStorage.setItem('token', body.token);
+                localStorage.setItem('token-init-date', new Date().getTime());
+    
+                dispatch(login({
+                    uid: body.uid,
+                    name: body.name
+                })   )
+    
+            }else{
+                dispatch(checkingFinish)
+            }
+    
+        }
 
     }
+
+
+const checkingFinish = ()=>({type: types.authCheckingFinish})
 
 
 const login = (user)=>({

@@ -14,11 +14,6 @@ const [formLoginValues, handleLoginInputChange]= useForm({
     lEmail: 'gavia@hotmail.com',
     lPassword: '123456'
 })
-const [formRegisterValues, handleRegisterInputChange]= useForm({
-    rName:'Josua',
-    rEmail: 'gavia@hotmail.com',
-    rPassword: '123456'
-})
 
 
 
