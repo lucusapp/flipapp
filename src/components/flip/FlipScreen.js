@@ -5,7 +5,6 @@ export const FlipScreen = () => {
     return (
 
       <div>
-
           <Navbar/>
       </div>
      
