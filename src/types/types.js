@@ -7,4 +7,7 @@ export const types={
     authStartStartTockenRenew: '[auth] Start token renew',
     authLogout: '[auth] Logout',
 
+
+    afiliadoStartnew: '[afiliado] Start add new'
+
 }
