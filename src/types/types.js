@@ -8,6 +8,10 @@ export const types={
     authLogout: '[auth] Logout',
 
 
-    afiliadoStartnew: '[afiliado] Start add new'
+    afiliadoAddNew: '[afiliado] Add new',
+    afiliadoStartAddNew: '[afiliado] Start add new',//inicializa el proceso de grabación.
+    afiliadoClearActive: '[afiliado] Clear active afiliado',
+    afiliadoUpdated: '[afiliado] Afiliado updated',
+    afiliadoDeleted: '[afiliado] Afiliado Deleted'
 
 }

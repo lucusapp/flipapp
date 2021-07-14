@@ -3,15 +3,14 @@ import { types } from "../types/types"
 
 
 
-
-export const afiliadoStartnew=(afiliado)=>{
+export const afiliadoStartnew=(id,name)=>{
     return async (dispatch)=>{
-        console.log(afiliado)
+        console.log(id,name)
     }
 } 
 
 
-const afiliadoAddNew = (afliciado)=>({
-    type: types.afiliadoAddNew,
-    payload: afliciado
-})
+// const afiliadoAddNew = (afliciado)=>({
+//     type: types.afiliadoAddNew,
+//     payload: afliciado
+// })

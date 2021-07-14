@@ -1,4 +1,6 @@
 const baseUrl = process.env.REACT_APP_API_URL;
+const baseFB='https://graph.facebook.com/v11.0/?'
+
 
 
 const fetchSinTocken = (endpoint,data,method='GET')=>{
@@ -41,11 +43,15 @@ const fetchConTocken = (endpoint,data,method='GET')=>{
     }
 }
 
+const fetchAfiliadoFB = (endpoint,data,method='GET')=>{
 
+}
 
 
 
 export{
     fetchSinTocken,
-    fetchConTocken
+    fetchConTocken,
+    fetchAfiliadoFB
+
 }
