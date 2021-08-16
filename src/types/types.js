@@ -6,6 +6,7 @@ export const types={
     authStartRegister: '[auth] Start Register',
     authStartStartTockenRenew: '[auth] Start token renew',
     authLogout: '[auth] Logout',
+    authLoginFail: '[auth] Login Fail',
 
 
     afiliadoAddNew: '[afiliado] Add new',

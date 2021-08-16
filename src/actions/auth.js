@@ -76,6 +76,15 @@ export const startChecking =()=>{
         }
 
     }
+    
+export const starLoginFacebook=(data)=>{
+
+    return {
+        type: types.authLogin,
+        payload: data
+    }
+    }
+
 
 
 const checkingFinish = ()=>({type: types.authCheckingFinish})

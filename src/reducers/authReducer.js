@@ -24,6 +24,11 @@ export const authReducer=(state=initialState, action)=>{
             return{
                 checking: false
             }
+        case types.authLoginFail:
+            return {
+                checking: false,
+                ...action.payload
+            }
 
         default:
             return state;
