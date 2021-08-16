@@ -1,11 +1,15 @@
 import { useDispatch } from "react-redux"
+import { fetchAfiliadoFB } from "../helpers/fetch"
 import { types } from "../types/types"
 
 
 
-export const afiliadoStartnew=(id,name)=>{
+export const afiliadoStartnew=(id)=>{
+    console.log(id)
     return async (dispatch)=>{
-        console.log(id,name)
+        const resp = await fetchAfiliadoFB(id,'POST');
+        const body = await resp.json();
+        console.log(body)
     }
 } 
 
@@ -13,4 +17,3 @@ export const afiliadoStartnew=(id,name)=>{
 // const afiliadoAddNew = (afliciado)=>({
 //     type: types.afiliadoAddNew,
 //     payload: afliciado
-// })
