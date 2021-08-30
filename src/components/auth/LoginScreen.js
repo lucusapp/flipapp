@@ -12,8 +12,11 @@ const responseFacebook = (res)=>{
    const data = {
        email: res.email,
        name: res.name,
-       uid: res.userID
+       uid: res.userID,
+       accessToken: res.accessToken
+       
    }
+   console.log(data)
 
    if (data.email){
    dispatch( starLoginFacebook(data))

@@ -1,6 +1,6 @@
-const baseUrl = process.env.REACT_APP_API_URL;
+const baseUrl = 'https://flipap.herokuapp.com/api';
 const baseFB='https://graph.facebook.com/v11.0';
-const token = 'EAALRN2JjbsUBAK6X1jDEiXMwZA7H0IgZC8hAh8m4RtEfW7QwsUHFqMoaBmuv523GstKH5qeUPnN7R8kSWt6QD02kJvTpUZCZAYfJkzTZCoh5fHTpD584QpQKZBFReDnf5G3vZB54ZCiBZBPrQm6hziG3aaSRo0lriVZCHB2ffHEH6uMKaklM7BQIge'
+const token = 'EAALRN2JjbsUBAL8SsP2Ccgr4xreZCE65ZAZCSA43oGAmIxPPzcKsuHdoUJhJAgQGCp26PopmZCOOwLYNpC8cZCUgL8tj7Uk6PH2q0GwYmaWhWF0CJU3JNv3r6TuggMi8KPZAWPKNWHAOIzYsXRapESZBzZAbShjiklhkMT3aFD8nZCOa5auUYqePQ39aycw4Ojw2lmXnG4chU517CMSSxkBsuA92sDhNgiXgZD'
 
 
 

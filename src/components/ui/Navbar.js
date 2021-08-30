@@ -12,7 +12,7 @@ const handleLogout = ()=>{
 }
 
     return (
-        <div className="navbar navbar-dark bg-dark mb-4">
+        <div className="navbar navbar-dark bg-dark mb-1">
             <span className="navbar-brand">
                 {name}
             </span>
